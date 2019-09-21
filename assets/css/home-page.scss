@@ -1,0 +1,277 @@
+---
+#Front End Matter Initialization - Do Not Delete This
+---
+/* We are using web font loaders. In case you would like to 
+use the old fashion way of loading fonts with the font url link
+then uncommnent this and the details in ./_sass/font-file.scss
+
+@import "font-file";
+*/
+@import "common";
+@import "app-header";
+@import "app-footer";
+
+.homePage {
+  .jumbotronSection {
+    background: url("/assets/images/lava-lamp-bg.jpg") no-repeat center center;
+    background-size: cover;
+    .posContainer {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      z-index: 10;
+      h1, p {
+        color: $white;
+      }
+      h1 {
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .jumbotronSection:before {
+    content: "";
+    display: block;
+    padding-top: 130%;
+  }
+  .jumbotronSection:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+  }
+  .introduction {
+    padding: 45px 0;
+    .heading {
+      padding: 15px;
+      h2 {
+        margin: 0;
+        font-size: 2.0rem;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    .segment {
+      padding: 15px;
+      position: relative;
+      .posContainer {
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .gettingStarted {
+    padding: 45px 15px;
+    background: #ffa500;
+    .posContainer {
+      color: $white;
+      h2 {
+        margin: 0 0 20px;
+        font-size: 2.0rem;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .defaultButton {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .quoteBlock {
+    position: relative;
+    background: $black;
+    .posContainer {
+      padding: 60px 15px;
+      text-align: center;
+      p {
+        font-size: 2.0rem;
+        margin-bottom: 0;
+        color: $white;
+      }
+      .sourceLink {
+        color: $white;
+        border-color: $orange;
+        background: $orange;
+        width: 210px;
+        display: block;
+        margin: 15px auto;
+      }
+    }
+  }
+  article {
+    background: url("/assets/images/banner-bg.png") no-repeat center center;
+    background-size: cover;
+    .borderBoxContainer {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+    .segment {
+      padding: 30px 15px;
+      h2 {
+        font-size: 2.0rem;
+        font-weight: 500;
+        color: $black;
+        margin: 0 0 20px;
+      }
+      p {
+        line-height: 23px;
+        color: $thisGrey;
+        margin-bottom: 15px;
+      }
+      ul.defaultList {
+        margin-bottom: 15px;
+        li {
+          color: $thisGrey;
+          margin-bottom: 30px;
+          line-height: 24px;
+          strong {
+            color: #444;
+            display: block;
+          }
+        }
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .defaultButton {
+        display: inline-block;
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .homePage {
+    .jumbotronSection {
+      .posContainer {
+        max-width: 570px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+      }
+    }
+    .jumbotronSection:before {
+      content: "";
+      display: block;
+      padding-top: 60%;
+    }
+    .introduction {
+      padding: 5% 0;
+      max-width: 768px;
+      margin: 0 auto;
+      .heading {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        width: 50%;
+        h2 {
+          font-size: $h2Size;
+          text-align: center;
+        }
+      }
+      .segment {
+        width: 50%;
+        padding: 0;
+        margin-left: auto;
+        .posContainer {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          width: 100%;
+          padding: 15px;
+        }
+      }
+      .segment:before {
+        content: "";
+        display: block;
+        padding-top: 50%;
+      }
+    }
+    .gettingStarted {
+      padding: 90px 15px;
+      .posContainer {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        h2 {
+          font-size: 3.5rem;
+        }
+        .defaultButton {
+          width: 250px;
+          margin: 0 auto;
+        }
+      }
+    }
+    .quoteBlock {
+      .posContainer {
+        padding: 120px 15px;
+        max-width: 550px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .homePage {
+    .jumbotronSection:before {
+      content: "";
+      display: block;
+      padding-top: 46%;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .homePage {
+    .jumbotronSection {
+      background-attachment: fixed;
+    }
+    .jumbotronSection:before {
+      content: "";
+      display: block;
+      padding-top: 35%;
+    }
+    .introduction, .gettingStarted {
+      margin: 0;
+      width: 50%;
+      max-width: 50%;
+      height: 475px;
+      float: left;
+    }
+    .gettingStarted {
+      padding: 0;
+      .posContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 420px;
+      }
+    }
+    article {
+      background-attachment: fixed;
+    }
+  }
+}

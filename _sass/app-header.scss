@@ -1,0 +1,13 @@
+@import "variables";
+
+.sampleNavBar {
+  background: $black;
+  padding: 15px;
+  font-weight: 600;
+  color: #ddd;
+  font-size: 1.2rem;
+  img {
+    width: 30px;
+    display: inline-block;
+  }
+}

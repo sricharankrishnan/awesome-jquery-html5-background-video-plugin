@@ -1,0 +1,100 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.metaDescription }}"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="keywords" content="{{ page.metaKeywords }}"/>
+
+    <!--Cannonical URL Setting Starts Here-->
+    <link href="https://jekyll-lava-boilerplater.netlify.com/" rel="cannonical"/>
+    <!--Cannonical URL Setting Ends Here-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Relbase Url File Details Starts Here-->
+    {% include rel-base.html %}
+    <!--Relbase Url File Details Ends Here-->
+
+    {% if page.url == "/404.html" %}
+    <!--404 Redirection Details Starts Here-->
+    <meta http-equiv="refresh" content="30; url=/">
+    <!--404 Redirection Details Ends Here-->
+    {% endif %}
+    
+    <!--Favicon Details Starts Here-->
+    <link href="/assets/icons/lava-lamp-favicon.png" rel="shortcut icon" type="image/png"/>
+    <!--Favicon Details Ends Here-->
+		
+    <!--Stylesheet Requirements Starts Here-->
+    <link href="{{ relBase }}assets/css/{{ page.stylesheet }}" rel="stylesheet" type="text/css"/>
+		<!--Stylesheet Requirements Ends Here-->
+  </head>
+  <body class="{{ page.bodyClass }}">
+    <!--Custom No Script Tag for Javascript Disabled-->
+    <noscript>
+      <div class="noscriptDiv">
+        <div class="posContainer text-center">
+          <p>Hey!</p>
+          <p>This website will work better with Javascript enabled. Please enabled it in your Browser. Thanks.</p>
+        </div>
+      </div>
+    </noscript>
+    <!--Custom No Script Tag for Javascript Disabled-->
+
+    <div class="appRoot" id="appRoot">
+      <!--Website Header Details Starts Here-->
+      <nav>
+        {% include app-header.html %}
+      </nav>
+      <!--Website Header Details Ends Here-->
+
+      <!--Main Webiste Content Details Starts Here-->
+      <main>
+      {{ content }}
+      </main>
+      <!--Main Website Content Details Ends Here-->
+      
+      <!--Website Footer Details Starts Here-->
+      <footer>
+        {% include app-footer.html %}
+      </footer>
+      <!--Website Footer Details Ends Here-->
+    </div>
+
+    <!--Web Font Loader Details Starts Here-->
+    <!--Refer Web Font Loader Github Page @ https://github.com/typekit/webfontloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      var __thisAppFontSetup = {
+        google: {
+          families: ["Noto Sans KR:300,400,500,700,900"]
+        }
+      };
+      WebFont.load(__thisAppFontSetup);
+    </script>
+    <!--Web Font Loader Details Ends Here-->
+
+		<!--Javascript Requirements Starts Here-->
+    <!--
+      We're making a call to google for the jquery file. Just in case, there is a backup copy of jquery version 3.3.1 
+      saved in ./js/lib-files directory for you!
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="{{ relBase }}assets/js/lib-files/bootstrap/bootstrap.min.js"></script>
+    <script src="{{ relBase }}assets/js/{{ page.jsfile }}" type="text/javascript"></script>
+    <!--Javascript Requirements Ends Here-->
+  </body>
+</html>

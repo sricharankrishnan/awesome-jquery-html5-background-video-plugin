@@ -1,0 +1,153 @@
+/*
+  This is the common stylesheet. Place any/all styles that are applicable
+  across your web app.
+
+  This file imports bootstrap 3.x version into it. You can now
+  import this particular file into a css file required to handle
+  per page. 
+*/
+@import "variables";
+@import "bootstrap/stylesheets/bootstrap-sprockets";
+@import "bootstrap/stylesheets/_bootstrap"; 
+
+body {
+  font-family: $appFont;
+  font-size: $baseFontSize;
+  font-weight: 400;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  .noscriptDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1500;
+    background: $linkBlue; 
+    .posContainer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 450px;
+      font-family: monospace;
+      p {
+        color: $white;
+        font-size: $baseFontSize/1.1;
+      }
+      p:first-child {
+        font-size: 5.0rem;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: $h1Size;
+}
+h2 {
+  font-size: $h2Size;
+}
+h3 {
+  font-size: $h3Size;
+}
+h4 {
+  font-size: $h4Size;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  color: $linkBlue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.positionRelative {
+  position: relative;
+}
+
+.customRow:before, .customRow:after {
+  display: table;
+  content: "";
+}
+
+.customRow:after {
+  clear: both;
+}
+
+.defaultButton {
+  @include buttonReset();
+}
+.defaultButton.primaryButton {
+  background: $black;
+  border-color: $black;
+  color: $white;
+}
+.defaultButton.secondaryButton {
+  background: $white;
+  color: $black;
+  border-color: $black;
+}
+
+.orange {
+  color: $orange;
+}
+
+.videoParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  margin-bottom: -1px;
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 767px) {
+	@media (min-aspect-ratio: 16/9) {
+		.homePage {
+			.jumbotronSection {
+				.videoParent {
+					video {
+					top: -100%;
+					height: 300%;
+					}
+				}
+			}
+		}
+	}
+	 
+	@media (max-aspect-ratio: 16/9) {
+		.homePage {
+			.jumbotronSection {
+				.videoParent {
+				 video {
+					 width: 300%;                                                                                                                            
+					 left: -100%;
+				 }
+				}
+			}
+		}
+	}
+}

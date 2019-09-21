@@ -1,0 +1,50 @@
+$appFont: 'Noto Sans KR', sans-serif;
+
+$black: #000000;
+$white: #ffffff;
+$default: #bbbbbb;
+$lightGrey: #fafafa;
+$thisGrey: #888888;
+$linkBlue: #228CDB;
+$orange: #bf2500;
+
+$baseFontSize: 1.5rem;
+$h1Size: 4.0rem;
+$h2Size: 3.5rem;
+$h3Size: 3.0rem;
+$h4Size: 2.5rem;
+$baseFontSize: 1.6rem;
+
+@mixin transition($type, $duration, $style) {
+  transition-property: $type;
+  -moz-transition-property: $type;
+  -webkit-transition-property: $type;
+  -o-transition-property: $type;
+  -ms-transition-property: $type;
+  transition-duration: $duration;
+  -webkit-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-timing-function: $style;
+  -webkit-transition-timing-function: $style;
+  -o-transition-timing-function: $style;
+  -ms-transition-timing-function: $style;
+  -moz-transition-timing-function: $style;
+}
+
+@mixin buttonReset() {
+  cursor: pointer;
+  padding: 0 18px;
+  color: transparent;
+  background-color: transparent;
+  border: 2px solid transparent;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 44px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: $baseFontSize/1.2;
+}

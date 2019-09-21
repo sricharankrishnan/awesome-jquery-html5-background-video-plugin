@@ -1,0 +1,39 @@
+---
+#Front End Matter Initialization - Do Not Delete This
+---
+/* We are using web font loaders. In case you would like to 
+use the old fashion way of loading fonts with the font url link
+then uncommnent this and the details in ./_sass/font-file.scss
+
+@import "font-file";
+*/
+@import "common";
+@import "app-header";
+@import "app-footer";
+
+.pageNotFound {
+  .jumbotronSection {
+    background: $black;
+    height: calc(100vh - 112px);
+    .posContainer {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      z-index: 10;
+      h1, p {
+        color: $white;
+      }
+      h1 {
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

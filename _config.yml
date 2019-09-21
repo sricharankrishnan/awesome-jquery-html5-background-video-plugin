@@ -1,0 +1,31 @@
+# Configuraton File #
+#===================#
+title: Jekyll Lava Boiler Plate
+email: sricharan.krishnan@gmail.com
+github_username: sricharankrishnan (https://github.com/sricharankrishnan/)
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Expect the following details to be excluded during the final build process
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+   - package.json
+   - package-lock.json
+
+# Handling Permalinks.
+permalink: /:categories/:title/
+
+sass:
+  style: compressed
