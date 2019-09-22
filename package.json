@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cleanup": "rm -v ./CODE_OF_CONDUCT.md ./CONTRIBUTING.md ./LICENSE ./googleac250e85da349e6d.html && git remote remove origin",
-    "dev": "bundle exec jekyll serve --watch",
-    "devhost": "bundle exec jekyll serve --watch --host=0.0.0.0",
-    "hotreload": "bundle exec jekyll serve --livereload --host=0.0.0.0",
-    "build": "bundle exec jekyll build"
+    "dev": "bundle exec jekyll serve --watch --trace",
+    "devhost": "bundle exec jekyll serve --watch --host=0.0.0.0 --trace",
+    "hotreload": "bundle exec jekyll serve --livereload --host=0.0.0.0 --trace",
+    "build": "bundle exec jekyll build --trace"
   },
   "repository": {
     "type": "git",
