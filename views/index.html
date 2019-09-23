@@ -220,6 +220,22 @@ jsfile: "main.js"
       </p>
     </div>
     <div class="segment">
+      <h2>A Note on the Directory Structure</h2>
+      <p>
+        From the initial days, its been found necessary to have a good directory structure to keep things in place. Thus as a result, directories like <code>_sass</code> 
+        for example, have certain files split up into folders inside of it. The <b>modules</b> directory houses the <code>_variables.scss</code> and <code>_mixins.scss</code> files. You can open these up 
+        to see their contents, add new variables or mixins. Perhaps you may even want to add a file of a similar nature or purpose in this folder.
+      </p>
+      <p>
+        <code>vendor-components</code> refers to directories or folders that have third party files as dependencies. The <code>_sass</code> directory houses bootstrap inside this and <code>assets</code> directory houses 
+        jquery and others. Again, you could choose to have files of similar nature (3rd party sass files) and keep them here for importing into your page files.
+      </p>
+      <p>
+        The <code>common</code> directory is kept to house all common styles for the entire web site/static web app. You can add additional or new styles for your app's navigation, footer section and 
+        all other common styles applicable. These can then be imported. Take a look at <code>./assets/css/home-page.scss</code> file to see what is being done to get an understanding.
+      </p>
+    </div>
+    <div class="segment">
       <h2>What about the others you ask?</h2>
       <p>
         All other folders and files like <span class="orange">404.html</span>, <span class="orange">_config.yml</span>, 

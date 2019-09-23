@@ -6,9 +6,9 @@
   import this particular file into a css file required to handle
   per page. 
 */
-@import "variables";
-@import "bootstrap/stylesheets/bootstrap-sprockets";
-@import "bootstrap/stylesheets/_bootstrap"; 
+@import "modules/_variables";
+@import "vendor-components/bootstrap/stylesheets/bootstrap-sprockets";
+@import "vendor-components/bootstrap/stylesheets/_bootstrap"; 
 
 body {
   font-family: $appFont;

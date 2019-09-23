@@ -7,9 +7,9 @@ then uncommnent this and the details in ./_sass/font-file.scss
 
 @import "font-file";
 */
-@import "common";
-@import "app-header";
-@import "app-footer";
+@import "common/_common";
+@import "common/_app-header";
+@import "common/_app-footer";
 
 .pageNotFound {
   .jumbotronSection {
