@@ -1,4 +1,4 @@
-@mixin transition($type, $duration, $style) {
+@mixin app-transition($type, $duration, $style) {
   transition-property: $type;
   -moz-transition-property: $type;
   -webkit-transition-property: $type;
@@ -30,7 +30,7 @@
   font-weight: 700;
   font-size: $baseFontSize/1.2;
 }
-@mixin transform($value) {
+@mixin app-transform($value) {
   -webkit-transform: $value;
   -ms-transform: $value;
   transform: $value;
