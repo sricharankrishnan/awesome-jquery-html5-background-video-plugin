@@ -12,7 +12,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sricharankrishnan/jekyll-lava-boilerplate.git"
+    "url": "git+https://github.com/sricharankrishnan/jekyll-lava-boilerplate.git",
+    "private": true
   },
   "keywords": [
     "jekyll",
