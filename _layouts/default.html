@@ -13,10 +13,6 @@ layout: compress
     <meta name="robots" content="index,follow"/>
     <meta name="keywords" content="{{ page.metaKeywords }}"/>
 
-    <!--Cannonical URL Setting Starts Here-->
-    <link href="https://jekyll-lava-boilerplater.netlify.com/" rel="cannonical"/>
-    <!--Cannonical URL Setting Ends Here-->
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,7 +38,11 @@ layout: compress
     <link href="{{ relBase }}assets/css/{{ page.stylesheet }}" rel="stylesheet" type="text/css"/>
 		<!--Stylesheet Requirements Ends Here-->
 
-    <!--Google Adsense Starts Here [Please Delete This]-->
+    <!--Cannonical URL Setting Starts Here [Please Delete This Before Starting]-->
+    <link href="https://jekyll-lava-boilerplater.netlify.com/" rel="cannonical"/>
+    <!--Cannonical URL Setting Ends Here [Please Delete This Before Starting]-->
+
+    <!--Google Adsense Starts Here [Please Delete This Before Starting]-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({
@@ -50,7 +50,7 @@ layout: compress
               enable_page_level_ads: true
          });
     </script>
-    <!--Google Adsense Ends Here [Please Delete This]-->
+    <!--Google Adsense Ends Here [Please Delete This Before Starting]-->
   </head>
   <body class="{{ page.bodyClass }}">
     <!--Custom No Script Tag for Javascript Disabled-->
