@@ -63,6 +63,29 @@ that you've done the installation and integration properly.
 
 6.  And thats it. You've now got a background html5 video playing in your container div. Not only that, its responsive as well.
 
+When you inspect your parent element, you will see that a div class named "videoParent" is placed inside it. The z-index value of this element is at '0'. If you wish to have 
+additional child divs (example, positioned as absolute), please ensure to increase the z-index as needed. Example:
+```
+<div class="parentContainer" id="parentContainer"
+  data-mp4="/path/to/videos/example.mp4"
+  data-webm="/path/to/videos/example.webm"
+>
+  <div class="childDiv"></div>
+</div> 
+
+
+.parentContainer .childDiv {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 100%;
+  padding: 15px;
+  z-index: 10; /* this is what I'm trying to say... */
+}
+```
+
 ## The Config Object
 The config object that needs to be passed as an argument has the following details and properties:
 
