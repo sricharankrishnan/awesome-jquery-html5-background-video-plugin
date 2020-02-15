@@ -74,6 +74,9 @@
       };
       buildHtmlVideo(configObject);
     }
+
+    /* smooth scroll trigger */
+    smoothyScroll($mainRoot.find("#demoTrigger"));
   }
 
   /* helps to handle the project link section */

@@ -33,7 +33,23 @@ then uncommnent this and the details in ./_sass/font-file.scss
         text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
       }
       p {
-        margin-bottom: 0;
+        margin-bottom: 15px;
+      }
+      .buttonContainer {
+        .defaultButton {
+          width: 49.5%;
+          float: left;
+        }
+        .defaultButton:first-child {
+          margin-right: 1%;
+          border-color: $skyblue;
+          background: $skyblue;
+        }
+        .defaultButton:last-child {
+          color: $black;
+          border-color: $white;
+          background: $white;
+        }
       }
     }
     .strip {
