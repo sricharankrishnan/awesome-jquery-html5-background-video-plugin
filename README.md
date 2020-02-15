@@ -63,6 +63,7 @@ that you've done the installation and integration properly.
 
 6.  And thats it. You've now got a background html5 video playing in your container div. Not only that, its responsive as well.
 
+## Keep This in Mind
 When you inspect your parent element, you will see that a div class named "videoParent" is placed inside it. The z-index value of this element is at '0'. If you wish to have 
 additional child divs (example, positioned as absolute), please ensure to increase the z-index as needed. Example:
 ```
