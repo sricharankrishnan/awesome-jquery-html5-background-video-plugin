@@ -65,6 +65,20 @@ that you've done the installation and integration properly.
 
 ## The Config Object
 The config object that needs to be passed as an argument has the following details and properties:
+
+```javascript
+var configObject = {
+  parentElement: /* html element type */,
+  playInMobile: /* boolean data type - required */,
+  playInTablet: /* boolean data type - required */,
+  playInDesktop: /* boolean data type - required */,
+  webmVideo: /* path to your webm file - string type - required */,
+  mp4Video: /* path to your mp4 file - string type - required */,
+  callback: /* function type - optional */,
+  fallbackImage: /* string type - optional */
+};
+```
+
 1.  parentElement: **[required]** - this is the parent element inside of which you would need to have the plugin place the html5 video
 
 2.  playInMobile, playInTablet, playInDesktop: **[required]** - these are all boolean types. Specifies the device size ranges in which you would need to have the video playing on the intial load.
