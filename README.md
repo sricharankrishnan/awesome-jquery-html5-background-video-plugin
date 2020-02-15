@@ -62,3 +62,25 @@ that you've done the installation and integration properly.
     ```
 
 6.  And thats it. You've now got a background html5 video playing in your container div. Not only that, its responsive as well.
+
+## The Config Object
+The config object that needs to be passed as an argument has the following details and properties:
+1.  parentElement: **[required]** - this is the parent element inside of which you would need to have the plugin place the html5 video
+
+2.  playInMobile, playInTablet, playInDesktop: **[required]** - these are all boolean types. Specifies the device size ranges in which you would need to have the video playing on the intial load.
+    Does not get triggered on page resize. Mobile is considered max width upto 767px, Tablet is considered between 768px and 1199px width, Desktop is 1200px and above.
+
+3.  webmVideo: **[required]** - this is the source/path of the webm file type of the video
+
+4.  mp4Video: **[required]** - this is the source/path of the mp4 file type of the video
+
+5.  callback: this is optional, specifying a callback function that needs to be called once the html elements are placed inside the parent element.
+
+6.  fallbackImage: this is optional, this is the path to a background fallbackImage that would be placed. This is triggered when a user views your webapp from a device for which 
+    the background video is disabled.
+
+## Support This Project
+If you like this project, please help support it. This would really help encourage me to become a better developer and build more projects like this. You don't need to do so much. 
+Place a star on this project and it would mean a lot to me!
+
+Have a nice day and Happy Coding!
