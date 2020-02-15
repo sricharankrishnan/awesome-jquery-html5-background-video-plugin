@@ -16,6 +16,49 @@ that you've done the installation and integration properly.
 
 ## Start Coding
 1.  Lets do this with an example to help you understand this plugin. You'll first need a parent container html element. Lets say its a div:
-    `
+    ```
     <div class="parentContainer" id="parentContainer"></div> 
-    `
+    ```
+
+2.  Your parent container needs to have a height value and should be atleast positioned relative in css.
+    ```
+    .parentContainer {
+      width: 500px;
+      height: 500x;
+      position: relative;
+    }
+    ```
+
+3.  Then lets add the video paths to this parentContainer div. This plugin will require you to have 2 types of video formats. One is the ```.mp4``` format and the other is a ```.webm```,
+    please ensure you have both file types to handle any cross browser compatibilty requirements. Now lets continue with our example:
+    ```
+    <div class="parentContainer" id="parentContainer"
+      data-mp4="/path/to/videos/example.mp4"
+      data-webm="/path/to/videos/example.webm"
+    ></div> 
+    ```
+
+4.  Now you've placed your video paths with the help of a html5 data attribute, lets now write the needed javascript code for this:
+    ```javascript
+      var pe = $("#parentContainer");
+      var videoConfig = {
+        parentElement: pe,
+        playInMobile: true,
+        playInTablet: true,
+        playInDesktop: true,
+        webmVideo: pe.attr("data-webm"),
+        mp4Video: pe.attr("data-mp4"),
+        callback: function() {
+          console.log("Build complete");
+        },
+        fallbackImage: ""
+      };
+    ```
+
+5.  You'll need to pass a configuration object set with certain mandatory properties. Once you've got a setup like the example shown above, call the 
+    function to help build the element like so:
+    ```javascript
+    buildHtmlVideo(videoConfig);
+    ```
+
+6.  And thats it. You've now got a background html5 video playing in your container div. Not only that, its responsive as well.

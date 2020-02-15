@@ -67,6 +67,7 @@
         playInDesktop: true,
         webmVideo: webmVideoSrc,
         mp4Video: mp4VideoSrc,
+        fallbackImage: "",
         callback: function() {
           console.log("callback");
         }
