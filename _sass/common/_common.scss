@@ -7,6 +7,7 @@
   per page. 
 */
 @import "modules/_variables";
+@import "modules/html5-video-bg-styles.scss";
 @import "vendor-components/bootstrap/stylesheets/bootstrap-sprockets";
 @import "vendor-components/bootstrap/stylesheets/_bootstrap"; 
 
@@ -14,6 +15,7 @@ body {
   font-family: $appFont;
   font-size: $baseFontSize;
   font-weight: 400;
+  color: $black;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -100,54 +102,4 @@ a:hover {
   background: $white;
   color: $black;
   border-color: $black;
-}
-
-.orange {
-  color: $orange;
-}
-
-.videoParent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  overflow: hidden;
-  margin-bottom: -1px;
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-@media only screen and (max-width: 767px) {
-	@media (min-aspect-ratio: 16/9) {
-		.homePage {
-			.jumbotronSection {
-				.videoParent {
-					video {
-					top: -100%;
-					height: 300%;
-					}
-				}
-			}
-		}
-	}
-	 
-	@media (max-aspect-ratio: 16/9) {
-		.homePage {
-			.jumbotronSection {
-				.videoParent {
-				 video {
-					 width: 300%;                                                                                                                            
-					 left: -100%;
-				 }
-				}
-			}
-		}
-	}
 }

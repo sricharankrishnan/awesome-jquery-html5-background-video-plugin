@@ -1,7 +1,6 @@
-# jekyll-lava-boilerplate (Jekyll Version 4.0.0)
-A really simple project that serves as a boiler plate for developers building front end websites with Jekyll. Basic documentation available to help understand how this works.
-Interested to know more?
-<br/>
-Read the [Documenation and Installation/Download Guide](https://jekyll-lava-boilerplater.netlify.com/)
-<br/><br/>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ae9591c2-5ac3-48bf-839e-da5b94fac379/deploy-status)](https://app.netlify.com/sites/jekyll-lava-boilerplater/deploys)
+# HTML5 Background Video Builder
+This is a simple jquery based plugin that helps in building a responsive background html5 video. Placing background videos in the first fold section 
+or any other place is a common and popular trend in website. This plugin helps simply the process. You'll just need to download the required files, 
+place them in your web app as need, write some intialization code and run it.
+
+As this plugin is based on jquery, please ensure that you download a suitable version of jquery to help support the required functionality.

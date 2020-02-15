@@ -35,3 +35,16 @@
   -ms-transform: $value;
   transform: $value;
 }
+@mixin absolute-center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webit-transform: translate(-50%, -50%);
+}
+@mixin absolute-vertical-center() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}

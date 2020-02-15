@@ -1,10 +1,13 @@
 @import "modules/_variables";
 
-.sampleFooterBar {
+.footerParent {
   background: $black;
   padding: 15px;
   p {
     color: $white;
     margin: 0;
+    a {
+      color: $linkBlue;
+    }
   }
 }

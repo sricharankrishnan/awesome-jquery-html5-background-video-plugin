@@ -10,256 +10,71 @@ jsfile: "main.js"
 ---
 <!--jumbotron section starts here-->
 <div class="jumbotronSection positionRelative" id="jumbotronSection"
-  data-mp4="/assets/videos/jumbotron-bg-video.mp4"
-  data-webm="/assets/videos/jumbotron-bg-video.webm"
+  data-mp4="{{ relBase }}assets/videos/frog-video-bg.mp4"
+  data-webm="{{ relBase }}assets/videos/frog-video-bg.webm"
 >
-  <div class="posContainer text-center">
-    <h1>Jekyll Lava Boiler Plate</h1>
-    <p>An Open Source Jekyll Project.
-    <br/>
-    Upgraded with Jekyll Version 4.0 and comes with a package.json file for running terminal level commands.</p>
+  <span class="strip"></span>
+  <div class="posContainer">
+    <h1>HTML5 Background Video Builder</h1>
+    <p>A Jquery Plugin that can be used to build HTML5 Background videos for your web apps.</p>
   </div>
 </div>
 <!--jumbotron section ends here-->
 
-<!--introduction section starts here-->
-<div class="customRow">
-  <div class="introduction positionRelative">
-    <div class="heading">
-      <header>
-        <h2>Hello JLBP</h2>
-      </header>
+<!--demo section starts here-->
+<div class="demoSection positionRelative" id="demoSection">
+  <div class="customRow">
+    <!--segments start-->
+    <div class="segment">
+      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
+      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment">
-      <div class="posContainer">
-        <p>
-          <span class="orange">Jekyll Lava Boiler Plate (or just JLBP)</span>, is a project built to help developers get started with a jekyll build environment for their static
-          site projects. It comes pre-built with certain features that can be useful for production level sites.
-        </p>
-      </div>
+      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
+      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment">
-      <div class="posContainer">
-        <p>
-          JLBP is being served right now with <span class="orange">Jekyll Version 4.0</span>. Apart from that, it has been initiated with <b>npm init</b>, thus comes with a package.json 
-          file giving you possibilities of expanding it further (thought about using Grunt JS with Jekyll?).
-        </p>
-      </div>
+      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
+      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
+    <div class="segment">
+      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
+      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
+    </div>
+    <div class="segment">
+      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
+      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
+    </div>
+    <div class="segment">
+      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
+      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
+    </div>
+    <div class="segment">
+      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
+      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
+    </div>
+    <div class="segment">
+      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
+      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
+    </div>
+    <!--segments end-->
   </div>
-  <div class="gettingStarted positionRelative">
-    <div class="posContainer">
-      <h2>Getting Started</h2>
-      <p>Go to the github source page by clicking on the link below. Then get started with JLBP by reading the instructions below.</p>
-      <a href="https://github.com/sricharankrishnan/jekyll-lava-boilerplate" class="defaultButton primaryButton">Go To Github Source</a>
+</div>
+<!--demo section ends here-->
+
+<!--project links starts here-->
+<div class="linksSection positionRelative" id="linksSection"
+  data-mp4="{{ relBase }}assets/videos/frog-video-bg.mp4"
+  data-webm="{{ relBase }}assets/videos/frog-video-bg.webm"
+  data-hasloaded="false"
+>
+  <div class="posContainer text-center">
+    <h2>Get Started</h2>
+    <p>Go to the documentation and get to know how to implement this plugin into your web app</p>
+    <div class="buttonContainer">
+      <a href="" class="defaultButton primaryButton">Read The Docs</a>
+      <a href="" class="defaultButton primaryButton">Download Files</a>
     </div>
   </div>
 </div>
-<!--introduction section ends here-->
-
-<!--quote block starts here-->
-<div class="quoteBlock">
-  <div class="posContainer">
-    <p>JLBP is not an opiniated Jekyll Build. The idea is to provide a platform and a build environment for developers. If you understand Jekyll and JLBP, perhaps the possibilities are endless.</p>
-  </div>
-</div>
-<!--quote block ends here-->
-
-<!--content starts here-->
-<article>
-  <div class="borderBoxContainer">
-    <div class="segment">
-      <h2>Prerequisites</h2>
-      <p>
-        JLBP assumes that you have prior knowledge of how to work with jekyll. In case you don't, please click on the link below that 
-        takes you to their website. You also need to have jekyll locally installed in your system (with version 4.0) along with ruby. 
-      </p>
-      <p>
-        Do checkout the installation process with the jekyll website. If you already have these details ready, you can proceed to the next step.
-      </p>
-      <a target="_blank" href="https://jekyllrb.com/" class="defaultButton primaryButton" type="button">Go To Jekyll</a>
-    </div>
-    <div class="segment">
-      <h2>The JLBP Tree</h2>
-      <p>
-        The JLBP Tree represents the directory structure for the project scaffolding. Each portion/directory/file has a purpose. Some of them needs to be removed for you to use when it comes to building your
-        projects. You can refer to this tree image (link below) when you need to get started with using JLBP.
-      </p>
-      <p>
-        Lets now get you focused on what you need to do to start working with JLBP.
-      </p>
-      <a target="_blank" href="/assets/images/jlbp-tree-image.jpg" class="defaultButton primaryButton" type="button">View JLBP Tree</a>
-    </div>
-    <div class="segment">
-      <h2>Download The JLBP Scaffolding</h2>
-      <p>
-        JBLP can be downloaded from its github remote. You can start off by typing
-        <code>git clone git@github.com:sricharankrishnan/jekyll-lava-boilerplate.git [./your-project-directory-name]</code> to get started.
-      </p>
-      <p>
-        Allow the download process to complete and once this is done, proceed into your project directory name with <span class="orange">cd ./your-project-name</span> and 
-        follow along with the rest of the details below.
-      </p>
-    </div>
-    <div class="segment">
-      <h2>Remove These Files and Settings</h2>
-      <p>
-        Run terminal command <code>npm run cleanup</code> post the download <em>(possible because JLBP comes with a package.json file which you will see in the next section)</em>. This command helps to remove certain unwanted files and remotes.
-        The list of details that are being removed from this scaffolding are listing below for your information:
-      </p>
-      <ul class="list-unstyled defaultList">
-        <li>
-          <strong>The Github Remote:</strong>
-          This project has a github remote from which you may have clone the scaffolding. Please perform <code>git remote remove origin</code>.
-          You can set your own respective github remotes for your projects.
-        </li>
-        <li>
-          <strong>Unwanted Files:</strong>
-          <span class="orange">CODE_OF_CONDUCT.md</span>, 
-          <span class="orange">CONTRIBUTING.md</span>, 
-          <span class="orange">LICENSE</span>, 
-          <span class="orange">README.md</span>, 
-          <span class="orange">googleac250e85da349e6d.html</span> - are all files that may not be suitable for your project. These files are particularly used 
-          for hosting this project with Github/Google search console.
-        </li>
-        <li>
-          <strong>Cannonical Link Tag (Requires Manual Removal!)</strong>
-          Head to the <span class="orange">_layouts/default.html</span> file, remove
-          <code>&lt;link href="https://jekyll-lava-boilerplater.netlify.com/" rel="cannonical"/&gt;</code> as this is also applicable for
-          the JLBP project.
-        </li>
-      </ul>
-      <p>
-        With all of these details removed, lets now look at starting the server on your local machine.
-      </p>
-    </div>
-    <div class="segment">
-      <h2>Package.json and Server Start</h2>
-      <p>
-        JLBP comes with a package.json file. It has a couple of commands that you can use (in the scripts property) that makes it easy to 
-        run the server. They are:
-      </p>
-      <ul class="list-unstyled defaultList">
-        <li>
-          <strong><code>npm run dev</code></strong>
-          This is the standard and basic command that you can run on the terminal to start the jekyll server. A watch is kept on all files in 
-          your projects and will automatically update the build.
-        </li>
-        <li>
-          <strong><code>npm run devhost</code></strong>
-          Similar to the previous command but the difference being that you can see your jekyll website on a another device as long as you are 
-          on the same Wifi connection. The availability of this feature is purely dependent on Jekyll itself and is not propreitary to JLBP.
-        </li>
-        <li>
-          <strong><code>npm run hotreload</code></strong>
-          Helps to run the server like npm run dev but will auto refresh your browser once you save changes in your project file(s).
-          The availability of this feature is purely dependent on Jekyll itself and is not propreitary to JLBP.
-        </li>
-        <li>
-          <strong><code>npm run build</code></strong>
-          Performs the required build process. This will help to generate the required static files, once ready, you can then check out 
-          the <span class="orange">_site</span> directory for the folders and files that you can use to place it in a server or hosting area for your 
-          live website.
-        </li>
-      </ul>
-      <p>
-        Once you've removed all unwanted files and remote links mentioned from the previous section, you should be able to start the server with 
-        any one of the commands above. When you do open your browser with <span class="orange">http://localhost:4000/</span>, you should be 
-        able to see this exact same page.
-      </p>
-      <p>
-        With that you're set. Lets now see some of the features of JBLP in the following section
-      </p>
-    </div>
-  </div>
-</article>
-<!--content ends here-->
-
-<!--quote block starts here-->
-<div class="quoteBlock">
-  <div class="posContainer">
-    <p>JLBP comes with a couple of features that help with the development process. Minifying HTML and Sass file are some of the things that you can expect.</p>
-  </div>
-</div>
-<!--quote block ends here-->
-
-<!--content starts here-->
-<article>
-  <div class="borderBoxContainer">
-    <div class="segment">
-      <h2>Assets Directory</h2>
-      <p>
-        This directory has been created with the idea of housing all static assets. These would normally be files that are images, videos, stylesheets, javascript 
-        files and more. If you have a look at the directory (in javascript for example), you'd see that it even houses jquery and bootstrap.
-      </p>
-      <p>
-        Consider this to be a good place to store vendor requirements and depenedencies as well.
-      </p>
-    </div>
-    <div class="segment">
-      <h2>View Directory</h2>
-      <p>
-        All page related html files originate from this folder. This place represents the main body of a particular page. From here, we can call on 
-        jekyll features like <span class="orange"><code>{&#x25 include some-partial-file.html &#x25}</code></span> ifyou like to render a partial file into your main body.
-      </p>
-      <p>
-        When you run the build command all page content files are finally built from the files housed in this directory.
-      </p>
-    </div>
-    <div class="segment">
-      <h2>Rel Base</h2>
-      <p>
-        Rel Base is a feature that was picked up from <a href="https://ricostacruz.com/til/relative-paths-in-jekyll" target="_blank"><span class="orange">here</span></a>.
-        Its very useful in providing the much needed relative path builds to connect your file requirements with the main html file. Would encourage that you 
-        read through that blog for more information.
-      </p>
-    </div>
-    <div class="segment">
-      <h2>The Compress HTML File</h2>
-      <p>
-        The compress.html file located in./ _layouts directory helps in compressing the HTML file that is finally being rendered on the browser. Note that this is actually achieved 
-        by initiailizing ./_layouts/default.html file with the needed front matter on top, otherwise it won't work.
-      </p>
-    </div>
-    <div class="segment">
-      <h2>A Note on the Directory Structure</h2>
-      <p>
-        From the initial days, its been found necessary to have a good directory structure to keep things in place. Thus as a result, directories like <code>_sass</code> 
-        for example, have certain files split up into folders inside of it. The <b>modules</b> directory houses the <code>_variables.scss</code> and <code>_mixins.scss</code> files. You can open these up 
-        to see their contents, add new variables or mixins. Perhaps you may even want to add a file of a similar nature or purpose in this folder.
-      </p>
-      <p>
-        <code>vendor-components</code> refers to directories or folders that have third party files as dependencies. The <code>_sass</code> directory houses bootstrap inside this and <code>assets</code> directory houses 
-        jquery and others. Again, you could choose to have files of similar nature (3rd party sass files) and keep them here for importing into your page files.
-      </p>
-      <p>
-        The <code>common</code> directory is kept to house all common styles for the entire web site/static web app. You can add additional or new styles for your app's navigation, footer section and 
-        all other common styles applicable. These can then be imported. Take a look at <code>./assets/css/home-page.scss</code> file to see what is being done to get an understanding.
-      </p>
-    </div>
-    <div class="segment">
-      <h2>What about the others you ask?</h2>
-      <p>
-        All other folders and files like <span class="orange">404.html</span>, <span class="orange">_config.yml</span>, 
-        <span class="orange">Gemfile</span>, <span class="orange">Gemfile.lock</span>, <span class="orange">_includes</span>, 
-        <span class="orange">_layouts</span>, <span class="orange">_sass</span>, <span class="orange">_site</span> are all a part of the original 
-        build from Jekyll. Like mentioned earlier, you'd need to have some understanding of how jekyll works in order to get this parts as well.
-      </p>
-    </div>
-  </div>
-</article>
-<!--content ends here-->
-
-<!--quote block starts here-->
-<div class="quoteBlock">
-  <div class="posContainer">
-    <p>
-      If you do like the JLBP Project and you would like to support it, just head over to the github project page and 'STAR' it. Your support 
-      could help encourage more improvements to be made in the future.
-    </p>
-    <a href="https://github.com/sricharankrishnan/jekyll-lava-boilerplate" class="defaultButton primaryButton sourceLink">
-      Go To Project Source
-    </a>
-  </div>
-</div>
-<!--quote block ends here-->
+<!--project links ends here-->

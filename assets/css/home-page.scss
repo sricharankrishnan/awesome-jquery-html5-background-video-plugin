@@ -13,14 +13,14 @@ then uncommnent this and the details in ./_sass/font-file.scss
 
 .homePage {
   .jumbotronSection {
-    background: url("/assets/images/lava-lamp-bg.jpg") no-repeat center center;
+    background: url("../images/frog-bg.jpg") no-repeat center center;
     background-size: cover;
     .posContainer {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
       left: 0;
+      transform: translate(-50%);
+      -webkit-transform: translateY(-50%);
       width: 100%;
       padding: 15px;
       z-index: 10;
@@ -29,17 +29,28 @@ then uncommnent this and the details in ./_sass/font-file.scss
       }
       h1 {
         margin-top: 0;
-        text-transform: uppercase;
+        font-size: 4.5rem;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
       }
       p {
         margin-bottom: 0;
       }
     }
+    .strip {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      z-index: 9;
+      background: $skyblue;
+      opacity: 0.3;
+    }
   }
   .jumbotronSection:before {
     content: "";
     display: block;
-    padding-top: 130%;
+    padding-top: 150%;
   }
   .jumbotronSection:after {
     content: "";
@@ -51,120 +62,98 @@ then uncommnent this and the details in ./_sass/font-file.scss
     background: rgba(0, 0, 0, 0.25);
     z-index: 0;
   }
-  .introduction {
-    padding: 45px 0;
-    .heading {
-      padding: 15px;
-      h2 {
-        margin: 0;
-        font-size: 2.0rem;
-        text-transform: uppercase;
-        font-weight: 600;
-      }
-    }
-    .segment {
-      padding: 15px;
-      position: relative;
-      .posContainer {
-        p {
-          margin: 0;
+  .demoSection {
+    .customRow {
+      .segment {
+				background: $white;
+        position: relative;
+        .playIcon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          width: 50px;
+          height: 50px;
+          padding: 5px;
+          background: $white;
+          border-radius: 50%;
+					-webkit-box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.2);
+					-moz-box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.2);
+					box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.2);
         }
       }
-    }
-  }
-  .gettingStarted {
-    padding: 45px 15px;
-    background: #ffa500;
-    .posContainer {
-      color: $white;
-      h2 {
-        margin: 0 0 20px;
-        font-size: 2.0rem;
-        text-transform: uppercase;
-        font-weight: 600;
-      }
-      p {
-        margin-bottom: 20px;
-      }
-      .defaultButton {
-        display: block;
-        width: 100%;
-      }
-    }
-  }
-  .quoteBlock {
-    position: relative;
-    background: $black;
-    .posContainer {
-      padding: 60px 15px;
-      text-align: center;
-      p {
-        font-size: 2.0rem;
+      .segment:last-child {
         margin-bottom: 0;
-        color: $white;
       }
-      .sourceLink {
-        color: $white;
-        border-color: $orange;
-        background: $orange;
-        width: 210px;
+      .segment:before {
+        content: "";
         display: block;
-        margin: 15px auto;
+        padding-top: 100%;
       }
     }
   }
-  article {
-    background: url("/assets/images/banner-bg.png") no-repeat center center;
+	.linksSection {
+    background: url("../images/frog-bg.jpg") no-repeat center center;
     background-size: cover;
-    .borderBoxContainer {
-      max-width: 750px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    .segment {
-      padding: 30px 15px;
-      h2 {
-        font-size: 2.0rem;
-        font-weight: 500;
-        color: $black;
-        margin: 0 0 20px;
-      }
+		.posContainer {
+			@include absolute-center();
+			width: 100%;
+			max-width: 450px;
+			padding: 15px;
+			z-index: 10;
+			h2, p {
+				color: $white;
+			}
+			h2 {
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+				font-size: 4.0rem;
+			}
       p {
-        line-height: 23px;
-        color: $thisGrey;
         margin-bottom: 15px;
       }
-      ul.defaultList {
-        margin-bottom: 15px;
-        li {
-          color: $thisGrey;
-          margin-bottom: 30px;
-          line-height: 24px;
-          strong {
-            color: #444;
-            display: block;
-          }
+      .buttonContainer {
+        .defaultButton {
+          width: 49.5%;
+          float: left;
         }
-        li:last-child {
-          margin-bottom: 0;
+        .defaultButton:first-child {
+          margin-right: 1%;
+          border-color: $skyblue;
+          background: $skyblue;
+        }
+        .defaultButton:last-child {
+          color: $black;
+          border-color: $white;
+          background: $white;
         }
       }
-      .defaultButton {
-        display: inline-block;
-        margin: 15px 0;
-      }
-    }
-  }
+		}
+	}
+	.linksSection:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		background: rgba(0, 0, 0, 0.25);
+	}
+	.linksSection:before {
+		content: "";
+		display: block;
+		padding-top: 120%;
+	}
 }
-
 @media only screen and (min-width: 768px) {
   .homePage {
     .jumbotronSection {
       .posContainer {
-        max-width: 570px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
+        max-width: 450px;
+      }
+      .strip {
+        width: 65%;
       }
     }
     .jumbotronSection:before {
@@ -172,64 +161,32 @@ then uncommnent this and the details in ./_sass/font-file.scss
       display: block;
       padding-top: 60%;
     }
-    .introduction {
-      padding: 5% 0;
-      max-width: 768px;
-      margin: 0 auto;
-      .heading {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        width: 50%;
-        h2 {
-          font-size: $h2Size;
-          text-align: center;
-        }
-      }
-      .segment {
-        width: 50%;
-        padding: 0;
-        margin-left: auto;
-        .posContainer {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -webkit-transform: translate(-50%, -50%);
-          width: 100%;
-          padding: 15px;
-        }
-      }
-      .segment:before {
-        content: "";
-        display: block;
-        padding-top: 50%;
-      }
-    }
-    .gettingStarted {
-      padding: 90px 15px;
-      .posContainer {
-        max-width: 500px;
-        margin: 0 auto;
-        text-align: center;
-        h2 {
-          font-size: 3.5rem;
-        }
-        .defaultButton {
-          width: 250px;
-          margin: 0 auto;
-        }
-      }
-    }
-    .quoteBlock {
-      .posContainer {
-        padding: 120px 15px;
-        max-width: 550px;
-        margin: 0 auto;
-      }
-    }
+		.demoSection {
+			.customRow {
+				.segment {
+					float: left;
+					height: 310px;
+				}
+				.segment:before {
+					padding-top: 0;
+				}
+				.segment:first-child,
+				.segment:nth-child(4),
+				.segment:nth-child(5),
+				.segment:last-child {
+					width: 40%;
+				}
+				.segment:nth-child(2),
+				.segment:nth-child(3),
+				.segment:nth-child(6),
+				.segment:nth-child(7) {
+					width: 60%;
+				}
+			}
+		}
+		.linksSection:before {
+			padding-top: 50%;
+		}
   }
 }
 @media only screen and (min-width: 992px) {
@@ -239,39 +196,53 @@ then uncommnent this and the details in ./_sass/font-file.scss
       display: block;
       padding-top: 46%;
     }
+		.demoSection {
+			.bodySection {
+				.segment {
+					width: calc(99%/3);
+					margin-bottom: 0.5%;
+				}
+				.segment:nth-child(odd) {
+					margin-right: 0;
+				}
+				.segment:nth-child(3n + 2) {
+					margin: 0 0.5%;
+				}
+			}
+		}
+		.linksSection:before {
+			padding-top: 40%;
+		}
   }
 }
 @media only screen and (min-width: 1200px) {
   .homePage {
     .jumbotronSection {
       background-attachment: fixed;
+      .posContainer {
+        left: calc(100% - 1200px);
+        h1 {
+          font-size: 5.0rem;
+        }
+      }
     }
     .jumbotronSection:before {
       content: "";
       display: block;
       padding-top: 35%;
     }
-    .introduction, .gettingStarted {
-      margin: 0;
-      width: 50%;
-      max-width: 50%;
-      height: 475px;
-      float: left;
+		.demoSection {
+			.customRow {
+				.segment {
+					height: 400px;
+				}
+			}
+		}
+    .linksSection {
+      background-attachment: fixed !important;
     }
-    .gettingStarted {
-      padding: 0;
-      .posContainer {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        width: 100%;
-        max-width: 420px;
-      }
-    }
-    article {
-      background-attachment: fixed;
-    }
+		.linksSection:before {
+			padding-top: 30%;
+		}
   }
 }
