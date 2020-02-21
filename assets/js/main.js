@@ -98,9 +98,41 @@
     });
   }
 
+  /* helps to handle the demo section for the page */
+  function demoSectionInit() {
+    var pe = $mainRoot.find("#demoSection");
+    var demoSegs = pe.find(".segment");
+    
+    /* activate the background images for the section */
+    demoSegs.addClass("bgActive");
+
+    checkWindowScrollPosition(pe, function() {
+      pe.attr("data-hasloaded", "true");
+      demoSegs.on("click", function() {
+        demoSegs.find(".videoParent").remove();
+        var $this = $(this);
+        if(!$this.hasClass("videoActive"))  {
+          $this.addClass("videoActive");
+          var mp4Src = $this.attr("data-mp4");
+          var webmSrc = $this.attr("data-webm");
+          var configObject = {
+            parentElement: $this,
+            playInMobile: true,
+            playInTablet: true,
+            playInDesktop: true,
+            webmVideo: webmSrc,
+            mp4Video: mp4Src
+          };
+          buildHtmlVideo(configObject);
+        }
+      });
+    });
+  }
+
   function centralController() {
     jumbotronSection();
     projectLinkSection();
+    demoSectionInit();
   }
 
   $(d).ready(centralController);

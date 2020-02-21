@@ -83,6 +83,7 @@ then uncommnent this and the details in ./_sass/font-file.scss
       .segment {
 				background: $white;
         position: relative;
+        cursor: pointer;
         .playIcon {
           position: absolute;
           top: 50%;
@@ -101,6 +102,38 @@ then uncommnent this and the details in ./_sass/font-file.scss
       }
       .segment:last-child {
         margin-bottom: 0;
+      }
+      .demo1.bgActive {
+        background: url("../images/demo-bg-1.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .demo2.bgActive {
+        background: url("../images/demo-bg-2.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .demo3.bgActive {
+        background: url("../images/demo-bg-3.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .demo4.bgActive {
+        background: url("../images/demo-bg-4.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .demo5.bgActive {
+        background: url("../images/demo-bg-5.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .demo6.bgActive {
+        background: url("../images/demo-bg-6.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .demo7.bgActive {
+        background: url("../images/demo-bg-7.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      .demo8.bgActive {
+        background: url("../images/demo-bg-8.jpg") no-repeat center center;
+        background-size: cover;
       }
       .segment:before {
         content: "";
