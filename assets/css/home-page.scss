@@ -78,6 +78,38 @@ then uncommnent this and the details in ./_sass/font-file.scss
     background: rgba(0, 0, 0, 0.25);
     z-index: 0;
   }
+  .infoTextSection {
+    background: #fafafa;
+    .posContainer {
+      padding: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 550px;
+      p {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 26px;
+        margin-bottom: 0;
+        .smallText {
+          color: $skyblue;
+          font-size: 1.4rem;
+          font-weight: 400;
+          margin-bottom: 15px;
+          display: block;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .infoTextSection:before {
+    content: "";
+    padding-top: 100%;
+    display: block;
+  }
   .demoSection {
     .customRow {
       .segment {
@@ -210,6 +242,9 @@ then uncommnent this and the details in ./_sass/font-file.scss
       display: block;
       padding-top: 60%;
     }
+    .infoTextSection:before {
+      padding-top: 55%;
+    }
 		.demoSection {
 			.customRow {
 				.segment {
@@ -259,6 +294,9 @@ then uncommnent this and the details in ./_sass/font-file.scss
 				}
 			}
 		}
+    .infoTextSection:before {
+      padding-top: 40%;
+    }
 		.linksSection:before {
 			padding-top: 40%;
 		}
@@ -278,6 +316,9 @@ then uncommnent this and the details in ./_sass/font-file.scss
     .jumbotronSection:before {
       content: "";
       display: block;
+      padding-top: 35%;
+    }
+    .infoTextSection:before {
       padding-top: 35%;
     }
 		.demoSection {
