@@ -1,0 +1,9 @@
+{% assign mode = "production" %}
+
+{% if mode == "development" %}
+  {% assign videopath = relBase %}
+{% endif %}
+{% if mode == "production" %}
+  {% assign videopath = "https://media.githubusercontent.com/media/sricharankrishnan/html5-background-video-builder/master/" %}
+{% endif %}
+

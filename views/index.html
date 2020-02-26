@@ -8,10 +8,14 @@ bodyClass: homePage
 stylesheet: "home-page.css"
 jsfile: "main.js"
 ---
+<!--global variable file imported here-->
+{% include app-global-variables.html %}
+<!--global variable file imported here-->
+
 <!--jumbotron section starts here-->
 <div class="jumbotronSection positionRelative" id="jumbotronSection"
-  data-mp4="{{ relBase }}assets/videos/frog-video-bg.mp4"
-  data-webm="{{ relBase }}assets/videos/frog-video-bg.webm"
+  data-mp4="{{ videopath }}assets/videos/frog-video-bg.mp4"
+  data-webm="{{ videopath }}assets/videos/frog-video-bg.webm"
 >
   <span class="strip"></span>
   <div class="posContainer">
@@ -30,57 +34,57 @@ jsfile: "main.js"
   <div class="customRow">
     <!--segments start-->
     <div class="segment demo1"
-      data-mp4="../assets/videos/demo-video-1.mp4"
-      data-webm="../assets/videos/demo-video-1.webm"
+      data-mp4="{{ videopath }}assets/videos/demo-video-1.mp4"
+      data-webm="{{ videopath }}assets/videos/demo-video-1.webm"
     >
       <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
       class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment demo2"
-      data-mp4="../assets/videos/demo-video-2.mp4"
-      data-webm="../assets/videos/demo-video-2.webm"
+      data-mp4="{{ videopath }}assets/videos/demo-video-2.mp4"
+      data-webm="{{ videopath }}assets/videos/demo-video-2.webm"
     >
       <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
       class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment demo3"
-      data-mp4="../assets/videos/demo-video-3.mp4"
-      data-webm="../assets/videos/demo-video-3.webm"
+      data-mp4="{{ videopath }}assets/videos/demo-video-3.mp4"
+      data-webm="{{ videopath }}assets/videos/demo-video-3.webm"
     >
       <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
       class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment demo4"
-      data-mp4="../assets/videos/demo-video-4.mp4"
-      data-webm="../assets/videos/demo-video-4.webm"
+      data-mp4="{{ videopath }}assets/videos/demo-video-4.mp4"
+      data-webm="{{ videopath }}assets/videos/demo-video-4.webm"
     >
       <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
       class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment demo5"
-      data-mp4="../assets/videos/demo-video-5.mp4"
-      data-webm="../assets/videos/demo-video-5.webm"
+      data-mp4="{{ videopath }}assets/videos/demo-video-5.mp4"
+      data-webm="{{ videopath }}assets/videos/demo-video-5.webm"
     >
       <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
       class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment demo6"
-      data-mp4="../assets/videos/demo-video-6.mp4"
-      data-webm="../assets/videos/demo-video-6.webm"
+      data-mp4="{{ videopath }}assets/videos/demo-video-6.mp4"
+      data-webm="{{ videopath }}assets/videos/demo-video-6.webm"
     >
       <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
       class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment demo7"
-      data-mp4="../assets/videos/demo-video-7.mp4"
-      data-webm="../assets/videos/demo-video-7.webm"
+      data-mp4="{{ videopath }}assets/videos/demo-video-7.mp4"
+      data-webm="{{ videopath }}assets/videos/demo-video-7.webm"
     >
       <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
       class="img-responsive center-block playIcon" alt="Play" title="Play"/>
     </div>
     <div class="segment demo8"
-      data-mp4="../assets/videos/demo-video-8.mp4"
-      data-webm="../assets/videos/demo-video-8.webm"
+      data-mp4="{{ videopath }}assets/videos/demo-video-8.mp4"
+      data-webm="{{ videopath }}assets/videos/demo-video-8.webm"
     >
       <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
       class="img-responsive center-block playIcon" alt="Play" title="Play"/>
@@ -92,8 +96,8 @@ jsfile: "main.js"
 
 <!--project links starts here-->
 <div class="linksSection positionRelative" id="linksSection"
-  data-mp4="{{ relBase }}assets/videos/frog-video-bg.mp4"
-  data-webm="{{ relBase }}assets/videos/frog-video-bg.webm"
+  data-mp4="{{ videopath }}assets/videos/frog-video-bg.mp4"
+  data-webm="{{ videopath }}assets/videos/frog-video-bg.webm"
   data-hasloaded="false"
 >
   <div class="posContainer text-center">

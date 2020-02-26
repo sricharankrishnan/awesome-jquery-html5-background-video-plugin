@@ -62,7 +62,7 @@
     if(mp4VideoSrc !== "" && webmVideoSrc !== "") {
       var configObject = {
         parentElement: pe,
-        playInMobile: false,
+        playInMobile: true,
         playInTablet: true,
         playInDesktop: true,
         webmVideo: webmVideoSrc,
