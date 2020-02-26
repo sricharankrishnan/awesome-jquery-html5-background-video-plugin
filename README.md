@@ -122,6 +122,6 @@ var configObject = {
 
 ## Support This Project
 If you like this project, please help support it. This would really help encourage me to become a better developer and build more projects like this. You don't need to do so much. 
-Place a star on this project and it would mean a lot to me!
+Place a star on this project and it would mean a lot to me! Inform your friends and colleagues too about this project.
 
 Have a nice day and Happy Coding!
