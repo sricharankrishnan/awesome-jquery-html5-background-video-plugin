@@ -79,7 +79,35 @@ then uncommnent this and the details in ./_sass/font-file.scss
     z-index: 0;
   }
   .infoTextSection {
-    background: #fafafa;
+    background: $black;
+    p {
+      font-size: 1.4rem;
+      line-height: 26px;
+      margin-bottom: 0;
+      color: $white;
+      .smallText {
+        color: $skyblue;
+        font-size: 1.3rem;
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+    .customRow {
+      max-width: 700px;
+      margin: 0 auto;
+      .segment {
+        padding: 45px 15px;
+      }
+      .segment:first-child {
+        padding-top: 90px;
+      }
+      .segment:last-child {
+        padding-bottom: 90px;
+      }
+    }
     .posContainer {
       padding: 15px;
       position: absolute;
@@ -89,23 +117,9 @@ then uncommnent this and the details in ./_sass/font-file.scss
       -webkit-transform: translate(-50%, -50%);
       width: 100%;
       max-width: 550px;
-      p {
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 26px;
-        margin-bottom: 0;
-        .smallText {
-          color: $skyblue;
-          font-size: 1.4rem;
-          font-weight: 400;
-          margin-bottom: 15px;
-          display: block;
-          text-transform: uppercase;
-        }
-      }
     }
   }
-  .infoTextSection:before {
+  .infoTextSection.withPos:before {
     content: "";
     padding-top: 100%;
     display: block;
@@ -242,8 +256,10 @@ then uncommnent this and the details in ./_sass/font-file.scss
       display: block;
       padding-top: 60%;
     }
-    .infoTextSection:before {
+    .infoTextSection.withPos:before {
+      content: "";
       padding-top: 55%;
+      display: block;
     }
 		.demoSection {
 			.customRow {
@@ -294,8 +310,47 @@ then uncommnent this and the details in ./_sass/font-file.scss
 				}
 			}
 		}
-    .infoTextSection:before {
-      padding-top: 40%;
+    .infoTextSection {
+      padding: 90px 0;
+      .customRow {
+        max-width: 95%;
+        .segment {
+          padding: 0 15px;
+          width: calc(100% / 3);
+          float: left;
+        }
+        .segment:first-child {
+          padding-top: 0;
+        }
+        .segment:nth-child(2) {
+          position: relative;
+          padding: 0 30px;
+        }
+        .segment:nth-child(2):before, .segment:nth-child(2):after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          width: 1px;
+          height: 55%;
+          background: #222;
+        }
+        .segment:nth-child(2):before {
+          left: 0;
+        }
+        .segment:nth-child(2):after {
+          right: 15px;
+        }
+        .segment:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+    .infoTextSection.withPos:before {
+      content: "";
+      padding-top: 45%;
+      display: block;
     }
 		.linksSection:before {
 			padding-top: 40%;
@@ -318,8 +373,21 @@ then uncommnent this and the details in ./_sass/font-file.scss
       display: block;
       padding-top: 35%;
     }
-    .infoTextSection:before {
-      padding-top: 35%;
+    .infoTextSection {
+      .customRow {
+        .segment:nth-child(2) {
+          padding: 0 45px;
+        }
+        .segment:nth-child(2):before {
+          left: 10px;
+        }
+        .segment:nth-child(2):after {
+          right: 25px;
+        }
+      }
+    }
+    .infoTextSection.withPos:before {
+      padding-top: 20%;
     }
 		.demoSection {
 			.customRow {
