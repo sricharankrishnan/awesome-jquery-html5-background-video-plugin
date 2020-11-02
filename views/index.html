@@ -1,6 +1,6 @@
 ---
 layout: default
-title: HTML5 Background Video Builder - with Jquery | Download Plugin from GitHub Free
+title: Jquery Tape Plugin | Download Plugin from GitHub Free
 metaDescription: A jquery plugin that helps to dynamically load html5 video playing in the background. Free to download from Github. Modern Browser Support.
 metaKeywords: "html5 background video, html5 video background, html5 background video javascript, jquery html5 video play, html5 video javascript, html5 video jquery, jquery plugin html5 background videoi, html5 background video jquery plugin"
 permalink: "/"
@@ -8,144 +8,42 @@ bodyClass: homePage
 stylesheet: "home-page.css"
 jsfile: "main.js"
 ---
-<!--global variable file imported here-->
-{% include app-global-variables.html %}
-<!--global variable file imported here-->
-
-<!--jumbotron section starts here-->
-<div class="jumbotronSection positionRelative" id="jumbotronSection"
-  data-mp4="{{ videopath }}assets/videos/frog-video-bg.mp4"
-  data-webm="{{ videopath }}assets/videos/frog-video-bg.webm"
->
-  <span class="strip"></span>
-  <div class="posContainer">
-    <h1>HTML5 Background Video Builder</h1>
-    <p>A Jquery Plugin that can be used to build HTML5 Background videos for your web apps.</p>
-    <div class="buttonContainer">
-      <a id="demoTrigger" href="#demoSection" class="defaultButton primaryButton">View Demos</a>
-      <a href="https://github.com/sricharankrishnan/html5-background-video-builder/blob/master/README.md" class="defaultButton primaryButton">Read The Docs</a>
-    </div>
-  </div>
-</div>
-<!--jumbotron section ends here-->
-
-<!--info text starts here-->
-<div class="infoTextSection positionRelative">
+<!--jumbotron section-->
+<div class="jumbotronSection" id="jumbotronSection">
   <div class="customRow">
     <div class="segment">
-      <p>
-        <span class="smallText">What is this plugin about and <br class="visible-md visible-lg"/>what can this do for you?</span>
-        This plugin is a Jquery based plugin, that helps to build and dyamically render HTML5 Background Videos in a specified 
-        HTML element, as specified in the Installation and Documentation section. Available to download for free from Github.com
-      </p>
+      <span class="smallText">Build User Experiences</span>
+      <h1>
+        Create <span>stunning</span> visual <span>html5 video backgrounds</span> for your clients. <span>Inspire with awe.</span>
+      </h1>
+      <a href="https://github.com/sricharankrishnan/jquery-tape-plugin/tree/master/plugin-bundle-files" class="defaultButton secondaryButton">Installation Files</a>
+      <a href="https://github.com/sricharankrishnan/jquery-tape-plugin/blob/master/README.md" class="defaultButton primaryButton">Documenation</a>
+      <div class="videoSection positionRelative"
+      id="vid1"
+      data-mp4="/assets/videos/jumbotron-bg-2-video.mp4"
+      data-webm="/assets/videos/jumbotron-bg-2-video.webm"></div>
     </div>
     <div class="segment">
-      <p>
-        <span class="smallText">Why was this plugin built and <br class="visible-md visible-lg"/> what does this solve?</span>
-        HTML5 Background Videos are still popular UI/UX elements in the Web Developement space and may be popular for many years to come. 
-        Avoid spending too much time digging around for solutions in case you need something neat and simple.
-      </p>
-    </div>
-    <div class="segment">
-      <p>
-        <span class="smallText">Is there a demo and what can I <br class="visible-md visible-lg"/>expect from this plugin?</span>
-        Below is the demo section. Click on an image section, wait for the video to load and you will result the end result of this plugin. It
-        helps renders continuous looping HTML5 Videos in the background.
-      </p>
-    </div>
-  </div>
-</div>
-<!--info text ends here-->
-
-<!--demo section starts here-->
-<div class="demoSection positionRelative" id="demoSection" data-hasloaded="false">
-  <div class="customRow">
-    <!--segments start-->
-    <div class="segment demo1"
-      data-mp4="{{ videopath }}assets/videos/demo-video-1.mp4"
-      data-webm="{{ videopath }}assets/videos/demo-video-1.webm"
-    >
-      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
-      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
-    </div>
-    <div class="segment demo2"
-      data-mp4="{{ videopath }}assets/videos/demo-video-2.mp4"
-      data-webm="{{ videopath }}assets/videos/demo-video-2.webm"
-    >
-      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
-      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
-    </div>
-    <div class="segment demo3"
-      data-mp4="{{ videopath }}assets/videos/demo-video-3.mp4"
-      data-webm="{{ videopath }}assets/videos/demo-video-3.webm"
-    >
-      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
-      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
-    </div>
-    <div class="segment demo4"
-      data-mp4="{{ videopath }}assets/videos/demo-video-4.mp4"
-      data-webm="{{ videopath }}assets/videos/demo-video-4.webm"
-    >
-      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
-      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
-    </div>
-    <div class="segment demo5"
-      data-mp4="{{ videopath }}assets/videos/demo-video-5.mp4"
-      data-webm="{{ videopath }}assets/videos/demo-video-5.webm"
-    >
-      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
-      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
-    </div>
-    <div class="segment demo6"
-      data-mp4="{{ videopath }}assets/videos/demo-video-6.mp4"
-      data-webm="{{ videopath }}assets/videos/demo-video-6.webm"
-    >
-      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
-      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
-    </div>
-    <div class="segment demo7"
-      data-mp4="{{ videopath }}assets/videos/demo-video-7.mp4"
-      data-webm="{{ videopath }}assets/videos/demo-video-7.webm"
-    >
-      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
-      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
-    </div>
-    <div class="segment demo8"
-      data-mp4="{{ videopath }}assets/videos/demo-video-8.mp4"
-      data-webm="{{ videopath }}assets/videos/demo-video-8.webm"
-    >
-      <img src="{{ relBase }}assets/icons/play-icon-blue.svg"
-      class="img-responsive center-block playIcon" alt="Play" title="Play"/>
-    </div>
-    <!--segments end-->
-  </div>
-</div>
-<!--demo section ends here-->
-
-<!--info text starts here-->
-<div class="infoTextSection positionRelative withPos">
-  <div class="posContainer text-center">
-    <p>
-      <span class="smallText">Like This Project? Support it With A Github Star!</span>
-      Supporting this project helps in encouraging the author to build more, aspiring to become a better developer.
-    </p>
-  </div>
-</div>
-<!--info text ends here-->
-
-<!--project links starts here-->
-<div class="linksSection positionRelative" id="linksSection"
-  data-mp4="{{ videopath }}assets/videos/frog-video-bg.mp4"
-  data-webm="{{ videopath }}assets/videos/frog-video-bg.webm"
-  data-hasloaded="false"
->
-  <div class="posContainer text-center">
-    <h2>Get Started</h2>
-    <p>Go to the documentation and get to know how to implement this plugin into your web app</p>
-    <div class="buttonContainer">
-      <a href="https://github.com/sricharankrishnan/html5-background-video-builder/blob/master/README.md" class="defaultButton primaryButton">Read The Docs</a>
-      <a href="https://github.com/sricharankrishnan/html5-background-video-builder/tree/master/plugin-bundle-files" class="defaultButton primaryButton">Download Files</a>
+      <div class="block">
+        <h2>Easy To Install</h2>
+        <p>The installation process for this plugin is stress free and easy to do. Documentation is available to guide on how to do this. This is your first step in creating an awesome experience</p>
+      </div>
+      <div class="block">
+        <h2>The Configuration Object</h2>
+        <p>We'll consume a simple Javascript Object. This will carry the configuration that is needed to build the html5 background video for your application.</p>
+      </div>
+      <div class="block">
+        <h2>Invoke the Function</h2>
+        <p>We have a built in function that will consume your configuration object. Once this function is invoked, you'll be creating magic that people will be inspired by</p>
+      </div>
+      <div class="block">
+        <h2>You Ready? Get Started!</h2>
+        <p>The Jquery Tape Plugin is a one stop place for implementing a HTML 5 Video Background for your Web Applications. Suitable for many modern browers
+        (need not be cutting edge so to speak).</p>
+        <p class="support">If you like this project or if its help you in anyway, please support this project with a Github Star!</p>
+        <a href="https://github.com/sricharankrishnan/jquery-tape-plugin" class="defaultButton primaryButton">Support This Project</a>
+      </div>
     </div>
   </div>
 </div>
-<!--project links ends here-->
+<!--jumbotron section-->

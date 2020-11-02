@@ -1,6 +1,19 @@
 (function($mainRoot, w, d) {
+  var app;
+
+  function ThisApp() {}
+  /* starter */
+  ThisApp.main = function() {
+    app = new ThisApp();
+    app.deploy();
+  };
+  /* deploys the object and starts the page functions */
+  ThisApp.prototype.deploy = function() {
+    var $this = this;
+    $this.jumbotronSection();
+  };
   /* checks the window scroll pos and then, will trigger the necessary callback fuction */
-  function checkWindowScrollPosition(thisParentElement, thisCallback) {
+  ThisApp.prototype.checkWindowScrollPosition = function(thisParentElement, thisCallback) {
     try {
       if (!thisParentElement || !thisCallback) {
         throw new Error(
@@ -30,10 +43,9 @@
     } catch (thisError) {
       console.error("checkWindowScrollPosition() -> " + thisError);
     }
-  }
-
+  };
   /* smooth scroll on element click */
-  function smoothyScroll(thisEl) {
+  ThisApp.prototype.smoothyScroll = function(thisEl) {
     try {
       if(thisEl.get(0).nodeType !== 1) {
         throw new Error("- requires @thisEl argument to be an HTML Node, please check.");
@@ -51,88 +63,28 @@
     catch(thisErr) {
       console.error("Smoothy Scroll: " + thisErr);
     }
-  }
-
+  };
   /* handles the jumbotron section */
-  function jumbotronSection() {
-    var pe = $mainRoot.find("#jumbotronSection"),
-        mp4VideoSrc = pe.attr("data-mp4"),
-        webmVideoSrc = pe.attr("data-webm");
+  ThisApp.prototype.jumbotronSection = function() {
+    var v1 = $mainRoot.find("#vid1");
 
-    if(mp4VideoSrc !== "" && webmVideoSrc !== "") {
-      var configObject = {
-        parentElement: pe,
-        playInMobile: true,
-        playInTablet: true,
-        playInDesktop: true,
-        webmVideo: webmVideoSrc,
-        mp4Video: mp4VideoSrc,
-        fallbackImage: "",
-        callback: function() {
-          console.log("callback");
-        }
-      };
-      buildHtmlVideo(configObject);
-    }
-
-    /* smooth scroll trigger */
-    smoothyScroll($mainRoot.find("#demoTrigger"));
-  }
-
-  /* helps to handle the project link section */
-  function projectLinkSection() {
-    var pe = $mainRoot.find("#linksSection");
-    checkWindowScrollPosition(pe, function() {
-      pe.attr("data-hasloaded", "true");
-
-      var videoConfig = {
-        parentElement: pe,
-        fallbackImage: "",
-        playInMobile: false,
-        playInTablet: true,
-        playInDesktop: true,
-        webmVideo: pe.attr("data-webm"),
-        mp4Video: pe.attr("data-mp4")
-      };
-      buildHtmlVideo(videoConfig);
-    });
-  }
-
-  /* helps to handle the demo section for the page */
-  function demoSectionInit() {
-    var pe = $mainRoot.find("#demoSection");
-    var demoSegs = pe.find(".segment");
-    
-    /* activate the background images for the section */
-    demoSegs.addClass("bgActive");
-
-    checkWindowScrollPosition(pe, function() {
-      pe.attr("data-hasloaded", "true");
-      demoSegs.on("click", function() {
-        demoSegs.find(".videoParent").remove();
-        var $this = $(this);
-        if(!$this.hasClass("videoActive"))  {
-          $this.addClass("videoActive");
-          var mp4Src = $this.attr("data-mp4");
-          var webmSrc = $this.attr("data-webm");
-          var configObject = {
-            parentElement: $this,
-            playInMobile: true,
-            playInTablet: true,
-            playInDesktop: true,
-            webmVideo: webmSrc,
-            mp4Video: mp4Src
-          };
-          buildHtmlVideo(configObject);
-        }
-      });
-    });
-  }
+    var config1 = {
+      parentElement: v1,
+      playInMobile: true,
+      playInTablet: true,
+      playInDesktop: true,
+      webmVideo: v1.attr("data-webm"),
+      mp4Video: v1.attr("data-mp4"),
+      callback: function() {
+        console.log("Build complete");
+      },
+      fallbackImage: ""
+    };
+    buildHtmlVideo(config1);
+  };
 
   function centralController() {
-    jumbotronSection();
-    projectLinkSection();
-    demoSectionInit();
+    ThisApp.main();
   }
 
   $(d).ready(centralController);

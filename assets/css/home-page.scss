@@ -10,397 +10,144 @@ then uncommnent this and the details in ./_sass/font-file.scss
 @import "common/_common";
 @import "common/_app-header";
 @import "common/_app-footer";
+@import "vendor-components/jquery-tape/jquery-tape-styles.scss";
 
 .homePage {
   .jumbotronSection {
-    background: url("../images/frog-bg.jpg") no-repeat center center;
-    background-size: cover;
-    .posContainer {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translate(-50%);
-      -webkit-transform: translateY(-50%);
-      width: 100%;
-      padding: 15px;
-      z-index: 10;
-      h1, p {
-        color: $white;
-      }
-      h1 {
-        margin-top: 0;
-        font-size: 4.5rem;
-        text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-      }
-      p {
-        margin-bottom: 15px;
-      }
-      .buttonContainer {
-        .defaultButton {
-          width: 49.5%;
-          float: left;
-        }
-        .defaultButton:first-child {
-          margin-right: 1%;
-          border-color: $skyblue;
-          background: $skyblue;
-        }
-        .defaultButton:last-child {
-          color: $black;
-          border-color: $white;
-          background: $white;
-        }
-      }
-    }
-    .strip {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      z-index: 9;
-      background: $skyblue;
-      opacity: 0.3;
-    }
-  }
-  .jumbotronSection:before {
-    content: "";
-    display: block;
-    padding-top: 150%;
-  }
-  .jumbotronSection:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.25);
-    z-index: 0;
-  }
-  .infoTextSection {
-    background: $black;
-    p {
-      font-size: 1.4rem;
-      line-height: 26px;
-      margin-bottom: 0;
-      color: $white;
-      .smallText {
-        color: $skyblue;
-        font-size: 1.3rem;
-        line-height: 20px;
-        font-weight: 500;
-        margin-bottom: 15px;
-        display: block;
-        text-transform: uppercase;
-      }
-    }
     .customRow {
-      max-width: 700px;
-      margin: 0 auto;
-      .segment {
-        padding: 45px 15px;
+      .videoSection {
+        background: #fafafa;
+      }
+      .videoSection:before {
+        content: "";
+        padding-top: 100%;
+        display: block;
       }
       .segment:first-child {
-        padding-top: 90px;
-      }
-      .segment:last-child {
-        padding-bottom: 90px;
-      }
-    }
-    .posContainer {
-      padding: 15px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      width: 100%;
-      max-width: 550px;
-    }
-  }
-  .infoTextSection.withPos:before {
-    content: "";
-    padding-top: 100%;
-    display: block;
-  }
-  .demoSection {
-    .customRow {
-      .segment {
-				background: $white;
-        position: relative;
-        cursor: pointer;
-        .playIcon {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          -webkit-transform: translate(-50%, -50%);
-          width: 50px;
-          height: 50px;
-          padding: 5px;
-          background: $white;
-          border-radius: 50%;
-					-webkit-box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.2);
-					-moz-box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.2);
-					box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.2);
+        padding: 60px 15px;
+        .videoSection {
+          margin-top: 60px;
         }
-      }
-      .segment:last-child {
-        margin-bottom: 0;
-      }
-      .demo1.bgActive {
-        background: url("../images/demo-bg-1.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .demo2.bgActive {
-        background: url("../images/demo-bg-2.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .demo3.bgActive {
-        background: url("../images/demo-bg-3.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .demo4.bgActive {
-        background: url("../images/demo-bg-4.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .demo5.bgActive {
-        background: url("../images/demo-bg-5.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .demo6.bgActive {
-        background: url("../images/demo-bg-6.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .demo7.bgActive {
-        background: url("../images/demo-bg-7.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .demo8.bgActive {
-        background: url("../images/demo-bg-8.jpg") no-repeat center center;
-        background-size: cover;
-      }
-      .segment:before {
-        content: "";
-        display: block;
-        padding-top: 100%;
-      }
-    }
-  }
-	.linksSection {
-    background: url("../images/frog-bg.jpg") no-repeat center center;
-    background-size: cover;
-		.posContainer {
-			@include absolute-center();
-			width: 100%;
-			max-width: 450px;
-			padding: 15px;
-			z-index: 10;
-			h2, p {
-				color: $white;
-			}
-			h2 {
-        text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-				font-size: 4.0rem;
-			}
-      p {
-        margin-bottom: 15px;
-      }
-      .buttonContainer {
+        span.smallText {
+          font-size: 1.5rem;
+          font-weight: 300;
+          display: block;
+        }
+        h1 {
+          font-size: 4.0rem;
+          margin-top: 5px;
+          margin-bottom: 30px;
+          line-height: 45px;
+          color: #666;
+          font-weight: 800;
+          text-transform: uppercase;
+          span {
+            color: $blue;
+          }
+        } 
         .defaultButton {
-          width: 49.5%;
-          float: left;
+          font-size: 1.2rem;
+          font-weight: 600;
         }
-        .defaultButton:first-child {
-          margin-right: 1%;
-          border-color: $skyblue;
-          background: $skyblue;
-        }
-        .defaultButton:last-child {
-          color: $black;
-          border-color: $white;
-          background: $white;
+        .defaultButton.secondaryButton {
+          margin-top: 15px;
         }
       }
-		}
-	}
-	.linksSection:after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 0;
-		background: rgba(0, 0, 0, 0.25);
-	}
-	.linksSection:before {
-		content: "";
-		display: block;
-		padding-top: 120%;
-	}
-}
-@media only screen and (min-width: 768px) {
-  .homePage {
-    .jumbotronSection {
-      .posContainer {
-        max-width: 450px;
-      }
-      .strip {
-        width: 65%;
-      }
-    }
-    .jumbotronSection:before {
-      content: "";
-      display: block;
-      padding-top: 60%;
-    }
-    .infoTextSection.withPos:before {
-      content: "";
-      padding-top: 55%;
-      display: block;
-    }
-		.demoSection {
-			.customRow {
-				.segment {
-					float: left;
-					height: 310px;
-				}
-				.segment:before {
-					padding-top: 0;
-				}
-				.segment:first-child,
-				.segment:nth-child(4),
-				.segment:nth-child(5),
-				.segment:last-child {
-					width: 40%;
-				}
-				.segment:nth-child(2),
-				.segment:nth-child(3),
-				.segment:nth-child(6),
-				.segment:nth-child(7) {
-					width: 60%;
-				}
-			}
-		}
-		.linksSection:before {
-			padding-top: 50%;
-		}
-  }
-}
-@media only screen and (min-width: 992px) {
-  .homePage {
-    .jumbotronSection:before {
-      content: "";
-      display: block;
-      padding-top: 46%;
-    }
-		.demoSection {
-			.bodySection {
-				.segment {
-					width: calc(99%/3);
-					margin-bottom: 0.5%;
-				}
-				.segment:nth-child(odd) {
-					margin-right: 0;
-				}
-				.segment:nth-child(3n + 2) {
-					margin: 0 0.5%;
-				}
-			}
-		}
-    .infoTextSection {
-      padding: 90px 0;
-      .customRow {
-        max-width: 95%;
-        .segment {
-          padding: 0 15px;
-          width: calc(100% / 3);
-          float: left;
+      .segment:nth-child(2) {
+        padding: 0 15px 60px;
+        .videoSection {
+          margin-bottom: 60px;
         }
-        .segment:first-child {
-          padding-top: 0;
+        .block {
+          padding-bottom: 60px;
+          h2 {
+            font-family: $bodyFont;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 20px;
+            margin-top: 0;
+            margin-bottom: 18px;
+            color: $blue;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 28px;
+            margin-bottom: 0;
+          }
+          p.support {
+            margin-top: 20px;
+          }
+          .defaultButton {
+            margin-top: 15px;
+            font-size: 1.2rem;
+          }
         }
-        .segment:nth-child(2) {
-          position: relative;
-          padding: 0 30px;
-        }
-        .segment:nth-child(2):before, .segment:nth-child(2):after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          -webkit-transform: translateY(-50%);
-          width: 1px;
-          height: 55%;
-          background: #222;
-        }
-        .segment:nth-child(2):before {
-          left: 0;
-        }
-        .segment:nth-child(2):after {
-          right: 15px;
-        }
-        .segment:last-child {
+        .block:last-child {
           padding-bottom: 0;
         }
       }
     }
-    .infoTextSection.withPos:before {
-      content: "";
-      padding-top: 45%;
-      display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .homePage {
+    .jumbotronSection {
+      .customRow {
+        max-width: 95%;
+        margin: 0 auto; 
+        .segment {
+          float: left;
+        }
+        .segment:first-child {
+          width: 55%;
+          padding: 60px 15px;
+        }
+        .segment:nth-child(2) {
+          width: 40%;
+          margin-left: 2.5%;
+          padding: 60px 15px;
+          .block {
+            padding-bottom: 60px;
+          }
+          .block:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
     }
-		.linksSection:before {
-			padding-top: 40%;
-		}
   }
 }
 @media only screen and (min-width: 1200px) {
   .homePage {
     .jumbotronSection {
-      background-attachment: fixed;
-      .posContainer {
-        left: calc(100% - 1200px);
-        h1 {
-          font-size: 5.0rem;
-        }
-      }
-    }
-    .jumbotronSection:before {
-      content: "";
-      display: block;
-      padding-top: 35%;
-    }
-    .infoTextSection {
       .customRow {
+        .segment:first-child {
+          padding: 120px 20px;
+          h1 {
+            font-size: 6.0rem;
+            line-height: 65px;
+          }
+          .defaultButton {
+            width: 170px;
+          }
+          .defaultButton.primaryButton {
+            margin-top: 15px;
+          }
+        }
         .segment:nth-child(2) {
-          padding: 0 45px;
-        }
-        .segment:nth-child(2):before {
-          left: 10px;
-        }
-        .segment:nth-child(2):after {
-          right: 25px;
+          padding: 120px 20px;
+          .block {
+            padding-bottom: 120px;
+            p {
+              font-size: 1.8rem;
+              line-height: 35px;
+            }
+          }
         }
       }
     }
-    .infoTextSection.withPos:before {
-      padding-top: 20%;
-    }
-		.demoSection {
-			.customRow {
-				.segment {
-					height: 400px;
-				}
-			}
-		}
-    .linksSection {
-      background-attachment: fixed !important;
-    }
-		.linksSection:before {
-			padding-top: 30%;
-		}
   }
 }
