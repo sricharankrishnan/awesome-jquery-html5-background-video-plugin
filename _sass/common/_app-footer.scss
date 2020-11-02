@@ -15,19 +15,38 @@
     }
   }
 }
-.gadSection {
-  padding: 15px;
-  background: $black;
-  .borderBoxContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.gadRow {
+  margin-top: 35px;
+}
+.gadRow:before {
+  content: "Advertisement";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  padding: 5px 5px 5px 0;
+  font-size: 1.0rem;
+  font-style: italic;
 }
 @media only screen and (min-width: 768px) {
   .footerParent {
     .borderBoxContainer {
       max-width: 95%;
       margin: 0 auto;
+    }
+    .gadRow {
+      .fGad {
+        width: 50%;
+        float: left;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footerParent {
+    .gadRow {
+      .fGad {
+        width: 33%;
+      }
     }
   }
 }
