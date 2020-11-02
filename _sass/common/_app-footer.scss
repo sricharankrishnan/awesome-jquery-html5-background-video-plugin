@@ -17,6 +17,9 @@
 }
 .gadRow {
   margin-top: 35px;
+  .fGad {
+    background: #f5f5f5;
+  }
 }
 .gadRow:before {
   content: "Advertisement";
