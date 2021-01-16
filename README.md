@@ -1,6 +1,6 @@
 # Awesome Jqery HTML5 Background Video Plugin
 
-[<a href="https://sricharankrishnan.github.io/jquery-tape-plugin/">Website Link</a>]
+[<a href="https://sricharankrishnan.github.io/awesome-jquery-html5-background-video-plugin/">Website Link</a>]
 
 This is a simple jquery based plugin that helps in building a responsive background html5 video. Placing background videos in the first fold section 
 or any other place is a common and popular trend in website. This plugin helps simply the process. You'll just need to download the required files, 
@@ -10,7 +10,7 @@ As this plugin is based on jquery, please ensure that you download a suitable ve
 
 ## Get Started by Downloading the Files
 First, get the needed files for this plugin. You'll need to use the javascript file and a stylesheet.
-<a href="https://github.com/sricharankrishnan/jquery-tape-plugin/tree/master/plugin-bundle-files">Click Here</a> to go to the files section. 
+<a href="https://github.com/sricharankrishnan/awesome-jquery-html5-background-video-plugin/tree/master/plugin-bundle-files">Click Here</a> to go to the files section. 
 Then, download the ```awesome-jquery-html5-background-video.js``` file and integrate it with a script tag. The stylesheets are in either **.scss** or **.css**, choose which ever is preferred, download it 
 and then integrate it either through Sass based imports or a CSS stylesheet link tag.
 
