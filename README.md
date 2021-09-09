@@ -25,7 +25,7 @@ A discussions channel has been opened up for this plugin. If you have any questi
 
 ### Getting Started
 Well, you first need to have the files needed to use this plugin. Follow these really simple steps one at a time and you should be ready to go.
-+ The <strong>/plugin-bundle-files</strong> directory has all the required files for you to use this plugin. This is the first thing you need to know
++ The <strong>/plugin-bundle-files</strong> directory has all the required files for you to use this plugin. This is the first thing you need to know. [Click Here](https://github.com/sricharankrishnan/awesome-jquery-html5-background-video-plugin/tree/master/plugin-bundle-files) to go to the source files.
 + The plugin requires you to have 2 types of video files, a <strong>.mp4</strong> and a <strong>.webm</strong>. This is based on my understanding of what works 
   in major browsers.
 + Make a choice for your preferred stylesheet. There are 3 variants - <strong>Sass</strong>, <strong>Less</strong> and <strong>Regular CSS</strong>. Choose 
@@ -148,7 +148,7 @@ additional child divs (example, positioned as absolute), please ensure to increa
   z-index: 10; /* this is what I'm trying to say... */
 }
 ```
-<br/><br/>
+<br/>
 
 ###  Support This Project
 If you like this project, please help support it. This would really help encourage me to become a better developer and build more projects like this. You don't need to do so much. 
