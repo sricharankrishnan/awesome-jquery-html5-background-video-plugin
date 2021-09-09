@@ -26,7 +26,7 @@ A discussions channel has been opened up for this plugin. If you have any questi
 ### Getting Started
 Well, you first need to have the files needed to use this plugin. Follow these really simple steps one at a time and you should be ready to go.
 + The <strong>/plugin-bundle-files</strong> directory has all the required files for you to use this plugin. This is the first thing you need to know
-+ The plugin requires you to have 2 types of video files, a <strong>.mp4</strong> and a </strong>.webm</strong>. This is based on my understanding of what works 
++ The plugin requires you to have 2 types of video files, a <strong>.mp4</strong> and a <strong>.webm</strong>. This is based on my understanding of what works 
   in major browsers.
 + Make a choice for your preferred stylesheet. There are 3 variants - <strong>Sass</strong>, <strong>Less</strong> and <strong>Regular CSS</strong>. Choose 
   what suits you and download that file - <em>awesome-jquery-html5-background-video.scss</em>, <em>awesome-jquery-html5-background-video.less</em> or 
