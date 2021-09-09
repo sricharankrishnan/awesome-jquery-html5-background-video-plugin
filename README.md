@@ -3,7 +3,7 @@
 ![Open Issues](https://img.shields.io/github/issues/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
 ![Forks](https://img.shields.io/github/forks/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
 ![Stars](https://img.shields.io/github/stars/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
-![License](https://img.shields.io/github/license/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
 <br/><br/>
 
 ### About
