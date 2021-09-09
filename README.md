@@ -1,7 +1,8 @@
 # Awesome Jquery HTML5 Background Video Plugin
 ![Version](https://img.shields.io/github/v/release/sricharankrishnan/awesome-jquery-html5-background-video-plugin?sort=semver)
-![Open Issues](https://img.shields.io/github/issues-raw/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
-![Closed Issues](https://img.shields.io/github/issues-closed-raw/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
+![Open Issues](https://img.shields.io/github/issues/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
+![Forks](https://img.shields.io/github/forks/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
+![Stars](https://img.shields.io/github/stars/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
 ![License](https://img.shields.io/github/license/sricharankrishnan/awesome-jquery-html5-background-video-plugin)
 <br/><br/>
 
